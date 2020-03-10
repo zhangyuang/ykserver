@@ -1,0 +1,35 @@
+{
+  "name": "ykserver",
+  "version": "1.0.1",
+  "description": "start server in local for midway-faas",
+  "main": "bin/index.js",
+  "bin": {
+    "ykserver": "bin/index.js",
+    "y": "bin/index.js"
+  },
+  "scripts": {
+    "lint": "standard"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "serverless",
+    "midway",
+    "faas"
+  ],
+  "author": "zhangyuang",
+  "license": "ISC",
+  "dependencies": {
+    "@ali/faas-invoke": "^3.0.41",
+    "@ali/midway-faas-dev-pack": "^3.0.41",
+    "faas-runtime": "^1.1.2",
+    "koa-proxy": "^1.0.0-alpha.3",
+    "path-to-regexp": "^3.1.0",
+    "ts-node": "^8.6.2"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standard": "^13.1.0"
+  }
+}
